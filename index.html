@@ -46,7 +46,7 @@
   <div class="wrapper">
 
     <!--========== HEADER AND NAVBAR ==========-->
-    <header class="w-full fixed top-0 left-0 bg-[#0A0E17]" id="navbar">
+    <header class="w-full fixed top-0 left-0 bg-[#0A0E17] z-50" id="navbar">
       <nav x-data="{ isOpen: false }"
         class="container p-6 mx-auto lg:flex lg:justify-between lg:items-center backdrop-blur-md">
         <div class="flex items-center justify-between">
@@ -102,7 +102,7 @@
       <div class="bg-no-repeat bg-cover bg-center bg-[url('./assets/img/stars.gif')] h-screen">
         <div class="flex h-full justify-center items-center">
           <div class="container px-6 py-16 pt-48 lg:pt-96 mx-auto text-center">
-            <div class="mx-auto">
+            <div data-aos="fade-up" class="mx-auto">
               <h1 class="text-3xl font-black text-white lg:text-6xl">
                 WELCOME <br> TO METASPACE
               </h1>
@@ -114,7 +114,7 @@
                 Explore Now
               </a>
             </div>
-            <div class="flex justify-center mt-10">
+            <div data-aos="fade-up" data-aos-delay="1000" class="flex justify-center mt-10">
               <!-- https://static.ffx.io/images/$zoom_1.1037%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/424120be81fb613084a93ff93b5536a8253b0ac5 -->
               <img class="object-cover w-full h-full rounded-xl lg:w-4/5"
                 src="https://static.ffx.io/images/$zoom_1.1037%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_54/t_crop_custom/q_86%2Cf_auto/424120be81fb613084a93ff93b5536a8253b0ac5">
@@ -129,7 +129,7 @@
       <div class="container px-6 py-16 mx-auto">
         <div class="items-center lg:flex">
           <div class="w-full lg:w-1/2">
-            <div class="lg:max-w-lg">
+            <div data-aos="fade-left" class="lg:max-w-lg">
               <h1 class="text-2xl font-semibold text-white lg:text-4xl">
                 Inspire education professionals about outer <span class="text-[#DF00FF]">space at scale</span>.
               </h1>
@@ -143,7 +143,7 @@
             </div>
           </div>
 
-          <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+          <div data-aos="fade-right" class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
             <img class="object-cover w-full h-96 rounded-xl lg:w-4/5"
               src="https://wp.technologyreview.com/wp-content/uploads/2022/06/Infosys-metaverse-image.png">
           </div>
@@ -155,64 +155,70 @@
     <!--========== SERVICES ==========-->
     <section class="services bg-[#0A0E17] py-8">
       <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl text-center font-semibold capitalize lg:text-4xl text-white">explore our <br> awesome <span
-            class="underline decoration-[#DF00FF]">Services</span></h1>
+        <h1 data-aos="fade-up" class="text-3xl text-center font-semibold capitalize lg:text-4xl text-white">explore our
+          <br> awesome <span class="underline decoration-[#DF00FF]">Services</span></h1>
 
-        <p class="mt-4 xl:mt-6 text-gray-300 text-center">
+        <p data-aos="fade-down" class="mt-4 xl:mt-6 text-gray-300 text-center">
           Providing security and comfort to explore the world of outer space
         </p>
 
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
-          <div
-            class="space-y-3 hover:bg-gray-900 py-6 px-12 rounded-lg hover:translate-y-[-12px] duration-300 transition-all">
-            <span class="inline-block p-3  rounded-full text-white bg-[#DF00FF]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-              </svg>
-            </span>
+          <div data-aos="fade-up">
+            <div
+              class="space-y-3 hover:bg-gray-900 py-6 px-12 rounded-lg hover:translate-y-[-12px] duration-300 transition-all">
+              <span class="inline-block p-3  rounded-full text-white bg-[#DF00FF]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </span>
 
-            <h1 class="text-2xl font-semibold capitalize text-white">Copy & paste components</h1>
+              <h1 class="text-2xl font-semibold capitalize text-white">Copy & paste components</h1>
 
-            <p class="text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-              corrupti doloribus voluptatum eveniet
-            </p>
+              <p class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
+                corrupti doloribus voluptatum eveniet
+              </p>
+            </div>
           </div>
-          <div
-            class="space-y-3 hover:bg-gray-900 py-6 px-12 rounded-lg hover:translate-y-[-12px] duration-300 transition-all">
-            <span class="inline-block p-3  rounded-full text-white bg-[#DF00FF]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-              </svg>
-            </span>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <div
+              class="space-y-3 hover:bg-gray-900 py-6 px-12 rounded-lg hover:translate-y-[-12px] duration-300 transition-all">
+              <span class="inline-block p-3  rounded-full text-white bg-[#DF00FF]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </span>
 
-            <h1 class="text-2xl font-semibold capitalize text-white">Copy & paste components</h1>
+              <h1 class="text-2xl font-semibold capitalize text-white">Copy & paste components</h1>
 
-            <p class="text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-              corrupti doloribus voluptatum eveniet
-            </p>
+              <p class="text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
+                corrupti doloribus voluptatum eveniet
+              </p>
+            </div>
           </div>
-          <div
-            class="space-y-3 hover:bg-gray-900 py-6 px-12 rounded-lg hover:translate-y-[-12px] duration-300 transition-all">
-            <span class="inline-block p-3  rounded-full text-white bg-[#DF00FF]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-              </svg>
-            </span>
+          <div data-aos="fade-up" data-aos-delay="1000">
+            <div
+              class="space-y-3 hover:bg-gray-900 py-6 px-12 rounded-lg hover:translate-y-[-12px] duration-300 transition-all">
+              <span class="inline-block p-3  rounded-full text-white bg-[#DF00FF]">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </span>
 
-            <h1 class="text-2xl font-semibold capitalize text-white">Copy & paste components</h1>
+              <h1 class="text-2xl font-semibold capitalize text-white">Copy & paste components</h1>
 
-            <p class="text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-              corrupti doloribus voluptatum eveniet
-            </p>
+              <p class="text-gray-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
+                corrupti doloribus voluptatum eveniet
+              </p>
+            </div>
           </div>
 
         </div>
@@ -225,16 +231,16 @@
     <section class="request-demo bg-no-repeat bg-cover bg-center bg-[url('./assets/img/stars.gif')]">
       <div class="container px-6 py-16 mx-auto text-center">
         <div class="max-w-lg mx-auto">
-          <h1 class="text-3xl font-bold text-white md:text-4xl">
+          <h1 data-aos="fade-up" class="text-3xl font-bold text-white md:text-4xl">
             Let's explore the Milky Way galaxy with us
           </h1>
           <canvas id="canvas3d"></canvas>
 
-          <p class="mt-6 text-gray-300">
+          <p data-aos="fade-up" data-aos-delay="50" class="mt-6 text-gray-300">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero similique obcaecati illum mollitia.
           </p>
 
-          <div
+          <div data-aos="fade-up"
             class="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-md border-gray-700 focus-within:ring focus-within:ring-blue-300 focus-within:border-blue-300 focus-within:ring-opacity-40">
             <form class="flex flex-col md:flex-row">
               <input type="email" placeholder="Enter your email address"
@@ -249,7 +255,8 @@
 
         <div class="max-w-screen-xl mx-auto mt-20">
           <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-            <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+
+            <div data-aos="fade-up" class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
               <svg class="h-12 fill-current text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 100">
                 <path fill="none" d="M0 0h266v100H0z"></path>
                 <path
@@ -258,7 +265,7 @@
               </svg>
             </div>
 
-            <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+            <div data-aos="fade-up" data-aos-delay="500" class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
               <svg class="h-10 fill-current text-gray-300" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 316 60">
                 <g transform="translate(9.259 4.552) scale(.4941)">
@@ -287,7 +294,7 @@
               </svg>
             </div>
 
-            <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+            <div data-aos="fade-up" data-aos-delay="1000" class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
               <svg class="h-8 mt-2 fill-current text-gray-300" viewBox="0 0 398 120" xmlns="http://www.w3.org/2000/svg">
                 <g fill-rule="nonzero">
                   <path
@@ -300,7 +307,7 @@
               </svg>
             </div>
 
-            <div class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
+            <div data-aos="fade-up" data-aos-delay="1500" class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
               <svg class="h-5 mt-1 fill-current text-gray-300" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 278.7 36.3">
                 <g>
@@ -311,7 +318,7 @@
               </svg>
             </div>
 
-            <div class="flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
+            <div data-aos="fade-up" data-aos-delay="2000" class="flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
               <svg class="h-8 fill-current text-gray-300" viewBox="0 0 2270 546" xmlns="http://www.w3.org/2000/svg">
                 <g fill-rule="evenodd">
                   <path
@@ -331,148 +338,150 @@
     <!--========== TESTIMONIALS ==========-->
     <section class="testimonials bg-[#0A0E17] py-8">
       <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-semibold text-center capitalize xl:text-5xl lg:text-4xl text-white">
+        <h1 data-aos="fade-up" class="text-3xl font-semibold text-center capitalize xl:text-5xl lg:text-4xl text-white">
           What clients saying
         </h1>
 
-        <div class="flex justify-center mx-auto mt-6">
+        <div data-aos="fade-up" class="flex justify-center mx-auto mt-6">
           <span class="inline-block w-40 h-1 bg-[#DF00FF] rounded-full"></span>
           <span class="inline-block w-3 h-1 mx-1 bg-[#DF00FF] rounded-full"></span>
           <span class="inline-block w-1 h-1 bg-[#DF00FF] rounded-full"></span>
         </div>
-        <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 0,
+        <div data-aos="fade-up" data-aos-delay="1000">
+          <div x-data="{swiper: null}" x-init="swiper = new Swiper($refs.container, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+        
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              1024: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+            },
+          })" class="relative w-10/12 mx-auto flex flex-row">
+              <div class="absolute inset-y-0 left-0 z-10 flex items-center">
+                <button @click="swiper.slidePrev()"
+                  class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
+                    <path fill-rule="evenodd"
+                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </div>
     
-        breakpoints: {
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          1024: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-        },
-      })" class="relative w-10/12 mx-auto flex flex-row">
-          <div class="absolute inset-y-0 left-0 z-10 flex items-center">
-            <button @click="swiper.slidePrev()"
-              class="bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-              <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-left w-6 h-6">
-                <path fill-rule="evenodd"
-                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </div>
-
-          <div class="swiper-container mt-12" x-ref="container">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide p-4">
-                <div>
-                  <p class="flex items-center text-center text-gray-300 lg:mx-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
-                    eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
-                    minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
-                    fugiat corrupti laudantium dolores reiciendis pariatur esse quod nihil quia cupiditate debitis
-                    quisquam nemo, accusamus animi explicabo? Architecto, unde laboriosam?
-                  </p>
-
-                  <div class="flex flex-col items-center justify-center mt-8">
-                    <img class="object-cover rounded-full w-14 h-14"
-                      src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                      alt="">
-
-                    <div class="mt-4 text-center">
-                      <h1 class="font-semibold text-white">Mia Brown</h1>
-                      <span class="text-sm text-gray-400">Marketer</span>
+              <div class="swiper-container mt-12" x-ref="container">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide p-4">
+                    <div>
+                      <p class="flex items-center text-center text-gray-300 lg:mx-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
+                        eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
+                        minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
+                        fugiat corrupti laudantium dolores reiciendis pariatur esse quod nihil quia cupiditate debitis
+                        quisquam nemo, accusamus animi explicabo? Architecto, unde laboriosam?
+                      </p>
+    
+                      <div class="flex flex-col items-center justify-center mt-8">
+                        <img class="object-cover rounded-full w-14 h-14"
+                          src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                          alt="">
+    
+                        <div class="mt-4 text-center">
+                          <h1 class="font-semibold text-white">Mia Brown</h1>
+                          <span class="text-sm text-gray-400">Marketer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide p-4">
+                    <div>
+                      <p class="flex items-center text-center text-gray-300 lg:mx-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
+                        eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
+                        minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
+                        fugiat corrupti laudantium dolores reiciendis pariatur esse quod nihil quia cupiditate debitis
+                        quisquam nemo, accusamus animi explicabo? Architecto, unde laboriosam?
+                      </p>
+    
+                      <div class="flex flex-col items-center justify-center mt-8">
+                        <img class="object-cover rounded-full w-14 h-14"
+                          src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                          alt="">
+    
+                        <div class="mt-4 text-center">
+                          <h1 class="font-semibold text-white">Mia Brown</h1>
+                          <span class="text-sm text-gray-400">Marketer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide p-4">
+                    <div>
+                      <p class="flex items-center text-center text-gray-300 lg:mx-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
+                        eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
+                        minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
+                        fugiat corrupti laudantium dolores reiciendis pariatur esse quod nihil quia cupiditate debitis
+                        quisquam nemo, accusamus animi explicabo? Architecto, unde laboriosam?
+                      </p>
+    
+                      <div class="flex flex-col items-center justify-center mt-8">
+                        <img class="object-cover rounded-full w-14 h-14"
+                          src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                          alt="">
+    
+                        <div class="mt-4 text-center">
+                          <h1 class="font-semibold text-white">Mia Brown</h1>
+                          <span class="text-sm text-gray-400">Marketer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="swiper-slide p-4">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover"
+                          src="https://images.unsplash.com/photo-1598951092651-653c21f5d0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                          alt="">
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="swiper-slide p-4">
+                    <div class="flex flex-col rounded shadow overflow-hidden">
+                      <div class="flex-shrink-0">
+                        <img class="h-48 w-full object-cover"
+                          src="https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                          alt="">
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide p-4">
-                <div>
-                  <p class="flex items-center text-center text-gray-300 lg:mx-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
-                    eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
-                    minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
-                    fugiat corrupti laudantium dolores reiciendis pariatur esse quod nihil quia cupiditate debitis
-                    quisquam nemo, accusamus animi explicabo? Architecto, unde laboriosam?
-                  </p>
-
-                  <div class="flex flex-col items-center justify-center mt-8">
-                    <img class="object-cover rounded-full w-14 h-14"
-                      src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                      alt="">
-
-                    <div class="mt-4 text-center">
-                      <h1 class="font-semibold text-white">Mia Brown</h1>
-                      <span class="text-sm text-gray-400">Marketer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide p-4">
-                <div>
-                  <p class="flex items-center text-center text-gray-300 lg:mx-8">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
-                    eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
-                    minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
-                    fugiat corrupti laudantium dolores reiciendis pariatur esse quod nihil quia cupiditate debitis
-                    quisquam nemo, accusamus animi explicabo? Architecto, unde laboriosam?
-                  </p>
-
-                  <div class="flex flex-col items-center justify-center mt-8">
-                    <img class="object-cover rounded-full w-14 h-14"
-                      src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                      alt="">
-
-                    <div class="mt-4 text-center">
-                      <h1 class="font-semibold text-white">Mia Brown</h1>
-                      <span class="text-sm text-gray-400">Marketer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide p-4">
-                <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0">
-                    <img class="h-48 w-full object-cover"
-                      src="https://images.unsplash.com/photo-1598951092651-653c21f5d0b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                      alt="">
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide p-4">
-                <div class="flex flex-col rounded shadow overflow-hidden">
-                  <div class="flex-shrink-0">
-                    <img class="h-48 w-full object-cover"
-                      src="https://images.unsplash.com/photo-1598946423291-ce029c687a42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
-                      alt="">
-                  </div>
-                </div>
+    
+              <div class="absolute inset-y-0 right-0 z-10 flex items-center">
+                <button @click="swiper.slideNext()"
+                  class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
+                  <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
+                    <path fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
               </div>
             </div>
-          </div>
-
-          <div class="absolute inset-y-0 right-0 z-10 flex items-center">
-            <button @click="swiper.slideNext()"
-              class="bg-white -mr-2 lg:-mr-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">
-              <svg viewBox="0 0 20 20" fill="currentColor" class="chevron-right w-6 h-6">
-                <path fill-rule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
     </section>
@@ -481,19 +490,21 @@
     <!-- ===================================== Footer ================================= -->
     <section class=" about__footer w-full py-8 bg-[#0A0E17] text-gray-300 text-sm" id="about__footer">
       <div class="container mx-auto">
-      <div class=' layout'>
+        <div class=' layout'>
           <div class=' flex flex-wrap gap-x-6 gap-y-16 justify-around items-start'>
-  
+
             <div class=' flex gap-4'>
-              <div><img src="https://app.spline.design/_assets/_icons/icon_favicon16x16.png" height="35px" width="35px" />
+              <div><img src="https://app.spline.design/_assets/_icons/icon_favicon16x16.png" height="35px"
+                  width="35px" />
               </div>
               <div>
                 <div class=' footer__title'>Metaspace</div>
-                <div class=' footer__text'>Clean lines, silent expressiveness, modern sophistication. <br /> Simplicity is
+                <div class=' footer__text'>Clean lines, silent expressiveness, modern sophistication. <br /> Simplicity
+                  is
                   everything.</div>
               </div>
             </div>
-  
+
             <div class=' footer__wrap'>
               <div class=' footer__title'>Developers</div>
               <div class=' footer__link'>About Developer</div>
@@ -516,7 +527,7 @@
               <div class=' footer__link'>Privacy Policy</div>
               <div class=' footer__link'>Legal Notice</div>
             </div>
-  
+
           </div>
           <div class=' mt-12 flex justify-between text-sm text-shade '>
             <div>&#169; Metaspace. All right reserved</div>
@@ -524,13 +535,16 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
   </div>
 
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="earth.js" type="module"></script>
+  <script src="./assets/js/earth.js" type="module"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
