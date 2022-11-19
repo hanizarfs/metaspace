@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Metaspace | About</title>
+
+  <style type="text/tailwindcss">
+    @layer components {
+      .section{
+        @apply w-full min-h-screen bg-[#0A0E17] text-gray-300 text-sm;
+      }
+
+      .layout{
+        @apply w-[90%] h-full mx-auto max-w-[1200px]
+      }
+
+      .section__title{
+        @apply text-center text-xl font-bold text-gray-100 sm:text-2xl lg:text-3xl;
+      }
+
+      .footer__title{
+        @apply text-lg text-slate-200 mb-4
+      }
+
+      .footer__text{
+        @apply text-sm py-1 transition-all duration-300 ease-in-out 
+      }
+
+      .footer__link{
+        @apply text-sm py-1 cursor-pointer transition-all duration-300 ease-in-out 
+      }
+
+      .footer__link:hover{
+        -webkit-text-stroke: 0.05rem #fff;
+        transform: scale(1.1);
+        color: #fff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==================== Navigation Bar ================ -->
+  <nav>
+
+  </nav>
+
+  <!-- ======================= Header ====================== -->
+  <section class=" about__header section relative overflow-hidden" id="about__header">
+    <div class=" layout">
+      <div
+        class=" absolute z-0 rounded-[8rem] -translate-y-[50vh] sm:-translate-y-[45vh] md:-translate-y-[40vh] lg:-translate-y-[35vh] translate-x-[10vw] sm:translate-x-[20vw] md:translate-x-[30vw] lg:translate-x-[40vw] rotate-45 w-[100vw] max-w-[700px] h-[100vh] md:h-[110vh] lg:h-[120vh] bg-gradient-to-b from-[#DF00FF] to-[#00FBCE]">
+      </div>
+      <div
+        class=" relative z-10 w-full h-screen flex flex-col justify-center items-center text-center gap-8 md:text-left md:items-start">
+        <div class=" text-3xl font-bold text-white">Create <br> Software Solution</div>
+        <div class=" text-base"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Dolores accusantium sit
+          ad?
+        </div>
+        <div
+          class=" w-fit py-2 px-4 rounded-full border border-white flex gap-10 items-center cursor-pointer hover:gap-16 transition-all duration-300 ease-in-out">
+          <div class=" text-base font-semibold">Contact Us</div>
+          <div class=" h-[30px] aspect-square rounded-full bg-white"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================About ======================== -->
+  <section class=" about__about section" id="about__about">
+    <div class=" section__title pb-12 pt-12">About</div>
+    <div class=" layout flex flex-col gap-8 md:gap-12 md:flex-row lg:max-w-[900px]">
+
+      <div class=" grid grid-cols-1 md:w-[60%] lg:w-[60%] md:grid-cols-2 md:grid-rows-2 md:max-h-[60vh] gap-4">
+        <div class="  rounded-xl overflow-hidden"><img src="./assets/img/about1.jfif" alt="" class=" w-full h-full">
+        </div>
+        <div class=" hidden md:block rounded-xl bg-gradient-to-b from-[#DF00FF] to-[#00FBCE] p-4">
+          <div class=" text-right text-xl font-bold">ABOUT <br> US</div>
+        </div>
+        <div class=" hidden md:block col-span-2 rounded-xl overflow-hidden"><img src="./assets/img/about3.jfif" alt="">
+        </div>
+      </div>
+
+      <div class=" flex flex-col text-center gap-6 w-[80%] mx-auto md:text-left">
+        <div class=" text-lg font-semibold md:w-[70%]">facilisi etiam dignissim diam quis enim lobortis scelerisque
+        </div>
+        <div class=" md:w-[70%]">
+          vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis
+          feugiat ornare
+          suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst
+        </div>
+        <div
+          class=" mx-auto md:mx-0 w-fit py-2 px-4 rounded-full border border-white flex gap-10 items-center cursor-pointer hover:gap-16 transition-all duration-300 ease-in-out">
+          <div class=" text-base font-semibold">Contact Us</div>
+          <div class=" h-[30px] aspect-square rounded-full bg-white"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================== Service =======================  -->
+  <section class=" about__service section" id="about__service">
+    <div class=" layout pt-16">
+      <div class=" section__title mb-12">How it Works</div>
+      <div class=" flex flex-col gap-12 justify-center items-center md:grid md:grid-cols-2">
+
+        <!-- 01 -->
+        <div
+          class=" md:mb-12 md:mx-auto flex w-fit gap-3 hover:shadow-[0px_3px_8px] hover:shadow-[#DF00FF] p-3 rounded-lg transition-all duration-300 ease-in-out max-w-[350px]">
+          <div class=" flex flex-col items-center gap-2">
+            <div class=" text-lg font-bold rotate-[270deg] text-[#DF00FF]">01</div>
+            <div class=" w-[1px] h-[30px] bg-gray-300"></div>
+          </div>
+          <div class=" flex flex-col gap-2 pt-6">
+            <div class=" text-base font-semibold">Lorem ipsum dolor sit amet.</div>
+            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur iusto quaerat
+              porro officiis voluptatibus?</div>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div
+          class=" md:mt-12 md:mx-auto flex w-fit gap-3 hover:shadow-[0px_3px_8px] hover:shadow-[#DF00FF] p-3 rounded-lg transition-all duration-300 ease-in-out max-w-[350px]">
+          <div class=" flex flex-col items-center gap-2">
+            <div class=" text-lg font-bold rotate-[270deg] text-[#DF00FF]">02</div>
+            <div class=" w-[1px] h-[30px] bg-gray-300"></div>
+          </div>
+          <div class=" flex flex-col gap-2 pt-6">
+            <div class=" text-base font-semibold">Lorem ipsum dolor sit amet.</div>
+            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur iusto quaerat
+              porro officiis voluptatibus?</div>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div
+          class=" md:mb-12 md:mx-auto flex w-fit gap-3 hover:shadow-[0px_3px_8px] hover:shadow-[#DF00FF] p-3 rounded-lg transition-all duration-300 ease-in-out max-w-[350px]">
+          <div class=" flex flex-col items-center gap-2">
+            <div class=" text-lg font-bold rotate-[270deg] text-[#DF00FF]">03</div>
+            <div class=" w-[1px] h-[30px] bg-gray-300"></div>
+          </div>
+          <div class=" flex flex-col gap-2 pt-6">
+            <div class=" text-base font-semibold">Lorem ipsum dolor sit amet.</div>
+            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur iusto quaerat
+              porro officiis voluptatibus?</div>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div
+          class=" md:mt-12 md:mx-auto flex w-fit gap-3 hover:shadow-[0px_3px_8px] hover:shadow-[#DF00FF] p-3 rounded-lg transition-all duration-300 ease-in-out max-w-[350px]">
+          <div class=" flex flex-col items-center gap-2">
+            <div class=" text-lg font-bold rotate-[270deg] text-[#DF00FF]">04</div>
+            <div class=" w-[1px] h-[30px] bg-gray-300"></div>
+          </div>
+          <div class=" flex flex-col gap-2 pt-6">
+            <div class=" text-base font-semibold">Lorem ipsum dolor sit amet.</div>
+            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, consequatur iusto quaerat
+              porro officiis voluptatibus?</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Our Team ======================= -->
+  <section class=" about__team section overflow-x-hidden" id="about__team">
+    <div class=" layout pt-12">
+      <div class=' layout flex flex-col gap-y-20 md:flex-row-reverse md:gap-16 overflow-hidden sm:overflow-visible'>
+        <div class='flex flex-col justify-center items-start relative w-fit mx-auto'>
+          <div class=' w-[200px] aspect-[3/4] overflow-hidden relative z-10 shadow-2xl neu-flat'>
+            <img class=' w-full h-full' src="./assets/img/team2.jfif" />
+          </div>
+          <div
+            class=' w-[200px] aspect-[3/4] overflow-hidden absolute z-[8] top-20 -right-36 neu-convex hidden sm:block'>
+            <img class=' w-full h-full' src="./assets/img/team1.jfif" />
+          </div>
+
+          <div class=' w-[300px] aspect-square absolute border-[#DF00FF] border-[8px] top-6 -right-32'></div>
+        </div>
+
+        <div class='flex flex-col gap-8 text-center md:w-[50%] md:text-right md:gap-16 justify-center items-start mt-6'>
+          <div class=' section__title w-full md:text-right'>Our Team</div>
+          <div class=''><span class=' text-[#DF00FF]'>MiSides</span> is a
+            community-based fashion platform that focuses on minimalism
+            and elegance. supported by many parties and brands, we are ready to provide the most suitable fashion
+            consulting service for those of you who are looking for dress satisfaction and also business consultation
+            for the latest fashion trends
+          </div>
+          <div class=' text-gray-400'>
+            community-based fashion platform that focuses on minimalism
+            and elegance. supported by many parties and brands, we are ready to provide the most suitable fashion
+            consulting service for those of you who are looking
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- =============================== Sponsors ======================== -->
+  <section class=" about__sponsor section" id="about__section">
+    <div class=" layout pt-12">
+      <div class=" section__title mb-12">Our Sponsors</div>
+      <div class=" flex flex-wrap justify-center items-center gap-8">
+
+        <!-- Sponsor 1 -->
+        <div
+          class=" h-fit max-h-[60px] w-[200px] saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out">
+          <img src="./assets/img/sponsor1.png" alt="">
+        </div>
+        <!-- Sponsor 2 -->
+        <div
+          class=" h-fit max-h-[60px] w-[200px] saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out">
+          <img src="./assets/img/sponsor2.png" alt="">
+        </div>
+        <!-- Sponsor 3 -->
+        <div class=" h-fit w-[200px] saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out"><img
+            src="./assets/img/sponsor3.png" alt=""></div>
+        <!-- Sponsor 4 -->
+        <div
+          class=" h-fit max-h-[60px] w-[200px] saturate-0 hover:saturate-100 transition-all duration-300 ease-in-out">
+          <img src="./assets/img/sponsor4.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================== Footer ================================= -->
+  <section class=" about__footer w-full py-8 bg-[#0A0E17] text-gray-300 text-sm" id="about__footer">
+    <div class=' layout'>
+      <div class=' flex flex-wrap gap-x-6 gap-y-16 justify-around items-start'>
+
+        <div class=' flex gap-4'>
+          <div><img src="" height="35px" width="35px" /></div>
+          <div>
+            <div class=' footer__title'>Metaspace</div>
+            <div class=' footer__text'>Clean lines, silent expressiveness, modern sophistication. <br /> Simplicity is
+              everything.</div>
+          </div>
+        </div>
+
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Developers</div>
+          <div class=' footer__link'>About Developer</div>
+          <div class=' footer__link'>About Website</div>
+        </div>
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Help</div>
+          <div class=' footer__link'>Customer Support</div>
+          <div class=' footer__link'>Contact</div>
+        </div>
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Social</div>
+          <div class=' footer__link'>Github</div>
+          <div class=' footer__link'>Linkedin</div>
+          <div class=' footer__link'>Twitter</div>
+        </div>
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Legal</div>
+          <div class=' footer__link'>Terms of Use</div>
+          <div class=' footer__link'>Privacy Policy</div>
+          <div class=' footer__link'>Legal Notice</div>
+        </div>
+
+      </div>
+      <div class=' mt-12 flex justify-between text-sm text-shade '>
+        <div>&#169; Metaspace. All right reserved</div>
+        <div>Skillfully crafted by VirginVR</div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
