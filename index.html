@@ -11,6 +11,28 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css"> -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
   <title>Metaspace</title>
+
+  <style type="text/tailwindcss">
+    @layer components {
+      .footer__title{
+        @apply text-lg text-slate-200 mb-4
+      }
+
+      .footer__text{
+        @apply text-sm py-1 transition-all duration-300 ease-in-out 
+      }
+
+      .footer__link{
+        @apply text-sm py-1 cursor-pointer transition-all duration-300 ease-in-out 
+      }
+
+      .footer__link:hover{
+        -webkit-text-stroke: 0.05rem #fff;
+        transform: scale(1.1);
+        color: #fff;
+      }
+    }
+  </style>
 </head>
 <!-- bg-[#DF00FF] bg-[#0A0E17] -->
 
@@ -452,7 +474,55 @@
         </div>
       </div>
     </section>
+
+      <!-- ===================================== Footer ================================= -->
+  <section class=" about__footer w-full py-8 bg-[#0A0E17] text-gray-300 text-sm" id="about__footer">
+    <div class=' layout'>
+      <div class=' flex flex-wrap gap-x-6 gap-y-16 justify-around items-start'>
+
+        <div class=' flex gap-4'>
+          <div><img src="https://app.spline.design/_assets/_icons/icon_favicon16x16.png" height="35px" width="35px" /></div>
+          <div>
+            <div class=' footer__title'>Metaspace</div>
+            <div class=' footer__text'>Clean lines, silent expressiveness, modern sophistication. <br /> Simplicity is
+              everything.</div>
+          </div>
+        </div>
+
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Developers</div>
+          <div class=' footer__link'>About Developer</div>
+          <div class=' footer__link'>About Website</div>
+        </div>
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Help</div>
+          <div class=' footer__link'>Customer Support</div>
+          <div class=' footer__link'>Contact</div>
+        </div>
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Social</div>
+          <div class=' footer__link'>Github</div>
+          <div class=' footer__link'>Linkedin</div>
+          <div class=' footer__link'>Twitter</div>
+        </div>
+        <div class=' footer__wrap'>
+          <div class=' footer__title'>Legal</div>
+          <div class=' footer__link'>Terms of Use</div>
+          <div class=' footer__link'>Privacy Policy</div>
+          <div class=' footer__link'>Legal Notice</div>
+        </div>
+
+      </div>
+      <div class=' mt-12 flex justify-between text-sm text-shade '>
+        <div>&#169; Metaspace. All right reserved</div>
+        <div>Skillfully crafted by VirginVR</div>
+      </div>
+    </div>
+    </div>
+  </section>
   </div>
+
+
 
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
